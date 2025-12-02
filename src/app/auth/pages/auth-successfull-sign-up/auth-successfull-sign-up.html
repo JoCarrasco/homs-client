@@ -1,0 +1,122 @@
+<div class="success-container">
+    <div class="success-card">
+            <div class="icon-wrapper" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="16 9 10.8 14 8 11.6"></polyline>
+                </svg>
+            </div>
+        
+        <h1 class="title">Welcome to HOMS</h1>
+        <p class="subtitle">Your account has been successfully created.</p>
+        
+        <div class="actions">
+            <button class="btn-primary" routerLink="/auth/login">Sign In</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #efeff1; /* soft light gray */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1c1c1e;
+    }
+
+    .success-container {
+        width: 100%;
+        max-width: 520px;
+        padding: 24px;
+    }
+
+    /* Minimalist, slightly 'beveled' card reminiscent of old Apple dialogs */
+    .success-card {
+        background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
+        border-radius: 12px;
+        padding: 48px 36px;
+        text-align: center;
+        border: 1px solid #d6d6d8;
+        box-shadow: 0 6px 12px rgba(18,18,18,0.06);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-wrapper {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        color: #6b6b6f; /* mid gray icon stroke */
+        background: linear-gradient(180deg, #f7f7f8 0%, #efeff1 100%);
+        border-radius: 14px;
+        border: 1px solid #e1e1e3;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .check-icon {
+        width: 44px;
+        height: 44px;
+        fill: none;
+        stroke: currentColor;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #121212;
+        margin: 0 0 8px 0;
+        letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #6e6e73;
+        margin: 0 0 28px 0;
+    }
+
+    .actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        background-color: #f2f2f4; /* light gray button */
+        color: #111114;
+        border: 1px solid #cfcfd1;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.12s ease, transform 0.08s ease;
+        min-width: 160px;
+        outline: none;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+    }
+
+    .btn-primary:hover {
+        background-color: #e9e9ec;
+        transform: translateY(-1px);
+    }
+
+    .btn-primary:active {
+        transform: translateY(0);
+        background-color: #e2e2e5;
+    }
+
+    /* Accessibility: focus-visible outline */
+    .btn-primary:focus-visible {
+        box-shadow: 0 0 0 3px rgba(120,120,128,0.12);
+        border-color: #a8a8ac;
+    }
+</style>
