@@ -1,0 +1,18 @@
+/* Small component-scoped helpers to compliment Tailwind utilities.
+   Keep these minimal — most layout is done with Tailwind classes above. */
+
+:host {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Tweak for subtle inner shadow on the circular logo */
+.logo-inner-shadow {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* Provide a slightly thicker focus ring for keyboard users */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(56,189,248,0.06);
+}
